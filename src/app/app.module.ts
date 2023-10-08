@@ -24,11 +24,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
 
 
 @NgModule({
@@ -45,7 +48,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormBuscaComponent,
     ModalComponent,
     BotaoControleComponent,
-    PromocoesComponent
+    PromocoesComponent,
+    DropdownUfComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +68,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatAutocompleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
